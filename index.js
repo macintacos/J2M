@@ -76,7 +76,7 @@ J2M.prototype.to_jira = function(str) {
   return (
     str
       // Bold, Italic, and Combined (bold+italic)
-      .replace(/([*_]+)(\S.*?)\1/g, function(match, wrapper, content) {
+      .replace(/([*_]+)(\S.*)\1/g, function(match, wrapper, content) {
         switch (wrapper.length) {
           case 1:
             return "_" + content + "_";
@@ -85,7 +85,7 @@ J2M.prototype.to_jira = function(str) {
           case 3:
             return "_*" + content + "*_";
           default:
-            return wrapper + content * wrapper;
+            return content;
         }
       })
       // All Headers (# format)
