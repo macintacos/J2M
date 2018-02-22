@@ -55,10 +55,6 @@ describe("to_jira", function() {
     var jira = j2m.to_jira("```javascript\nvar hello = 'world';\n```");
     jira.should.eql("{code:javascript}\nvar hello = 'world';\n{code}");
   });
-  it("should convert unnamed links properly", function() {
-    var jira = j2m.to_jira("<http://google.com>");
-    jira.should.eql("[http://google.com]");
-  });
   it("should convert named links properly", function() {
     var jira = j2m.to_jira("[Google](http://google.com)");
     jira.should.eql("[Google|http://google.com]");

@@ -81,10 +81,6 @@ describe("to_markdown", function() {
         "\n```"
     );
   });
-  it("should convert unnamed links properly", function() {
-    var markdown = j2m.to_markdown("[http://google.com]");
-    markdown.should.eql("<http://google.com>");
-  });
   it("should convert named links properly", function() {
     var markdown = j2m.to_markdown("[Google|http://google.com]");
     markdown.should.eql("[Google](http://google.com)");

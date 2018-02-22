@@ -22,7 +22,6 @@
 var hello = 'world';
 {code}
 
-<http://google.com>
 [Google](http://google.com)
 
 GitHub Flavor

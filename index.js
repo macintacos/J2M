@@ -38,10 +38,8 @@ J2M.prototype.to_markdown = function(str) {
       )
       // Pre-formatted text
       .replace(/{noformat}/g, "```")
-      // Un-named Links
-      .replace(/\[([^|]+)\]/g, "<$1>")
       // Named Links
-      .replace(/\[(.+?)\|(.+)\]/g, "[$1]($2)")
+      .replace(/\[(.+?)\|(.+?)\]/g, "[$1]($2)")
       // Single Paragraph Blockquote
       .replace(/^bq\.\s+/gm, "> ")
       // Remove color: unsupported in md
@@ -131,9 +129,6 @@ J2M.prototype.to_jira = function(str) {
       .replace(/`([^`]+)`/g, "{{$1}}")
       // Named Link
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "[$1|$2]")
-      // Un-Named Link
-      .replace(/<([^>]+)>/g, "[$1]")
-      // Single Paragraph Blockquote
       .replace(/^>/gm, "bq.")
       // tables
       .replace(
