@@ -1,12 +1,7 @@
 {
   "name": "jira2md",
   "version": "2.0.3",
-  "keywords": [
-    "jira",
-    "atlassian",
-    "wiki",
-    "markdown"
-  ],
+  "keywords": ["jira", "atlassian", "wiki", "markdown"],
   "homepage": "http://github.com/kylefarris/J2M.git",
   "repository": {
     "type": "git",
@@ -25,8 +20,5 @@
     "Kyle Farris <kyle@chomponllc.com>",
     "Eryk Warren <https://github.com/erykwarren>"
   ],
-  "license": "Apache-2.0",
-  "dependencies": {
-    "marked": "^0.3.5"
-  }
+  "license": "Apache-2.0"
 }
