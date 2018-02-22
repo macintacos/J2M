@@ -1,3 +1,5 @@
+var J2M = function() {};
+
 J2M.prototype.to_markdown = function(str) {
   return (
     str
