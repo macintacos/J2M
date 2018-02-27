@@ -20,14 +20,14 @@
 
 ```javascript
 var hello = 'world';
-{code}
+```
 
 [Google](http://google.com)
 
 GitHub Flavor
 ~~deleted~~
 
-{code}
+```
   preformatted piece of text
   so *no_ further _formatting* is done here
 ```
